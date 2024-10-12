@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;cin>>t;
+	while(t>0){
+	    int a,b;cin>>a>>b;
+	    float percentageA=(a/100.0)*100;
+	    float percentageB=(b/100.0)*200;
+	    float finalpriceA=100-percentageA;
+	    float finalpriceB=200-percentageB;
+	    if(finalpriceA<finalpriceB){
+	        cout<<"FIRST"<<endl;
+	    }else if(finalpriceA==finalpriceB){
+	        cout<<"BOTH"<<endl;
+	    }else{
+	        cout<<"SECOND"<<endl;
+	    }
+	   t--;
+	}
+
+}
