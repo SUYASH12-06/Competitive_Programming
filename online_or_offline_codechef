@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+      int t;cin>>t;
+      while(t>0){
+          int n,m;cin>>n>>m;
+          float online=n-(0.1*n);
+          if(online<m){
+              cout<<"ONLINE"<<endl;
+          }else if(online>m){
+              cout<<"DINING"<<endl;
+          }else{
+              cout<<"EITHER"<<endl;
+          }
+          
+         t--;
+      }
+}
