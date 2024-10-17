@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;cin>>t;
+	int p1=0,p2=0;
+	int lead=0;
+	int winner=0;
+	while(t--){
+	    int a,b;cin>>a>>b;
+	    p1+=a;
+	    p2+=b;
+	    int diff=abs(p1-p2);
+	    if(diff>lead){
+	        lead=diff;
+	        
+	        p1>p2?winner=1:winner=2;
+	    }
+	    
+	}
+	
+	cout<<winner<<" "<<lead;
+
+}
