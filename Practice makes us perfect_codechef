@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t=4,cnt=0;
+	while(t--){
+	    int p;
+	    cin>>p;
+	    if(p>=10)
+	    cnt++;
+	}
+	
+	cout<<cnt<<endl;
+
+}
